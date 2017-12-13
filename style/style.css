@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather:700');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Merriweather', serif;
+}
+
+.item {
+    background-color: #efefef;
+    border-bottom: 1px solid #999;
+    padding: 15px;
+}
+
+.item[data-agency="Revenue"]{
+    background-color: #e2d0f4;
+}
+
+.pill{
+    
+}
+
+.invert{
+    background-color: white;
+}
+
+.amount {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 8px;
+}
+
+.chatter {
+    font-size: 11pt;
+    padding-left: 9px;
+    padding-bottom: 1em;
+}
+
+.chatter-section {
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+}
+
+.subtitle{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+#search {
+    width: 50%;
+}
