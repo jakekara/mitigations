@@ -66,15 +66,6 @@ var go_with_data = function(d){
 	    
 	});
     
-    var legislation = items.append("div")
-	.classed("chatter", true)
-	.html(function(a){
-	    if (a["Requires Legislation"].trim() == "Y"){
-		return "<span class='chatter-section'>Requires legislation</span> ";
-	    }
-	})
-
-    
     
     var comments = items.append("div")
 	.classed("chatter", true)
@@ -82,6 +73,16 @@ var go_with_data = function(d){
 	    if (a["Comments"].trim().length <= 0) return "";
 	    return "<span class='chatter-section'>Comments:</span> " + a["Comments"]; 
 	});
+
+    
+    var legislation = items.append("div")
+	.classed("chatter", true)
+	.html(function(a){
+	    if (a["Requires Legislation"].trim() == "Y"){
+		return "<span class='chatter-section invert'>This proposal requires legislation</span> ";
+	    }
+	})
+    
 }
 
 d3.csv("data/deficit-mitigation.csv", go_with_data);
